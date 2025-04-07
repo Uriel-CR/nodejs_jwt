@@ -10,7 +10,6 @@ API segura con autenticación JWT y control de roles (usuario/admin) para operac
 
 ## 🚀 Instalación
 
-```bash
 # 1. Clonar repositorio (si aplica)
 git clone https://github.com/tu-usuario/tu-repositorio.git
 cd tu-repositorio
@@ -30,7 +29,6 @@ SECRET_KEY=tu_clave_secreta_jwt_compleja
 DB_URI=mongodb://localhost:27017/jwt_db
 
 🏃‍♂️ Comandos Útiles
-bash
 
 # Ejecutar en modo desarrollo (con nodemon)
 npm run dev
@@ -132,7 +130,6 @@ cors	^2.8.5	Middleware para CORS
 
     Registrar un usuario admin:
 
-bash
 
 curl -X POST http://localhost:4000/api/auth/signup \
   -H "Content-Type: application/json" \
@@ -140,7 +137,6 @@ curl -X POST http://localhost:4000/api/auth/signup \
 
     Iniciar sesión:
 
-bash
 
 curl -X POST http://localhost:4000/api/auth/signin \
   -H "Content-Type: application/json" \
@@ -148,7 +144,6 @@ curl -X POST http://localhost:4000/api/auth/signin \
 
     Listar usuarios (como admin):
 
-bash
 
 curl -X GET http://localhost:4000/api/users \
   -H "x-access-token: [JWT_RECIBIDO_EN_LOGIN]"
